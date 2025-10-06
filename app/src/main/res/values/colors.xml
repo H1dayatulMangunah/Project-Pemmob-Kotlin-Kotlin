@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="moyohiBlue">#6399F8</color>
+    <color name="moyohiButtonBg">#E6FFF4</color>
+    <color name="moyohiButtonText">#1BAE7A</color>
+    <color name="white">#FFFFFF</color>
+</resources>
+<style name="Theme.MoYoHi" parent="Theme.Material3.Light.NoActionBar">
+<item name="android:statusBarColor">@color/moyohiBlue</item>
+<item name="android:navigationBarColor">@color/moyohiBlue</item>
+<item name="android:windowLightStatusBar">false</item>
+</style>
