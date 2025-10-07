@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="108dp"
-        android:background="@color/bluePrimary"/>
+        android:background="@color/bluePrimary" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,14 +27,14 @@
             <ImageButton
                 android:id="@+id/btnAddNote"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:background="@drawable/bg_button_outline"
                 android:paddingHorizontal="14dp"
                 android:paddingVertical="8dp"
                 android:scaleType="centerInside"
-                android:contentDescription="@null"
+                android:contentDescription="tambah catatan"
                 android:src="@drawable/ic_add"
-                android:tint="@color/blueChip"/>
+                app:tint="@color/blueChip" />
 
             <!-- Panel PEMASUKAN -->
             <LinearLayout
@@ -112,47 +113,71 @@
 
                     <LinearLayout
                         style="@style/NoteItemLeft">
-                        <TextView style="@style/NoteItemTitle" android:text="Perawatan"/>
-                        <TextView style="@style/NoteItemSubtitle" android:text="Beli skincare"/>
+                        <TextView style="@style/NoteItemTitle" android:text="Perawatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli skincare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
                     </LinearLayout>
 
                     <TextView
                         style="@style/NoteItemAmount"
                         android:text="-Rp 500.000"
-                        android:textColor="@color/redExpense"/>
+                        android:textColor="@color/redExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
                 <!-- item 2 -->
                 <LinearLayout style="@style/NoteItemStyle">
                     <LinearLayout style="@style/NoteItemLeft">
-                        <TextView style="@style/NoteItemTitle" android:text="Pakaian"/>
-                        <TextView style="@style/NoteItemSubtitle" android:text="Beli sepatu"/>
+                        <TextView style="@style/NoteItemTitle" android:text="Pakaian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli sepatu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
                     </LinearLayout>
                     <TextView style="@style/NoteItemAmount"
                         android:text="- Rp 120.000"
-                        android:textColor="@color/redExpense"/>
+                        android:textColor="@color/redExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
                 <!-- item 3 -->
                 <LinearLayout style="@style/NoteItemStyle">
                     <LinearLayout style="@style/NoteItemLeft">
-                        <TextView style="@style/NoteItemTitle" android:text="Makanan dan Minuman"/>
-                        <TextView style="@style/NoteItemSubtitle" android:text="Beli geprek dan es nutrisari"/>
+                        <TextView style="@style/NoteItemTitle" android:text="Makanan dan Minuman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli geprek dan es nutrisari"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
                     </LinearLayout>
                     <TextView style="@style/NoteItemAmount"
                         android:text="- Rp 25.000"
-                        android:textColor="@color/redExpense"/>
+                        android:textColor="@color/redExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
                 <!-- item 4 -->
                 <LinearLayout style="@style/NoteItemStyle">
                     <LinearLayout style="@style/NoteItemLeft">
-                        <TextView style="@style/NoteItemTitle" android:text="Transportasi"/>
-                        <TextView style="@style/NoteItemSubtitle" android:text="Biaya tiket kereta api"/>
+                        <TextView style="@style/NoteItemTitle" android:text="Transportasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView style="@style/NoteItemSubtitle" android:text="Biaya tiket kereta api"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
                     </LinearLayout>
                     <TextView style="@style/NoteItemAmount"
                         android:text="- Rp 400.000"
-                        android:textColor="@color/redExpense"/>
+                        android:textColor="@color/redExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
             </LinearLayout>

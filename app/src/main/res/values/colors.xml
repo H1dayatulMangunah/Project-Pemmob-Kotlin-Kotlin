@@ -14,4 +14,6 @@
     <color name="textPrimary">#1C1C1C</color>
     <color name="textSecondary">#6B6B6B</color>
     <color name="stroke">#D9E4F3</color>
+    <color name="greenIncome">#2E7D32</color>
+    <color name="redExpense">#D32F2F</color>
 </resources>
