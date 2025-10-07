@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header biru atas (tinggi kecil agar mirip mockup) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@color/bluePrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Tombol Tambah Catatan (outlined) -->
+            <ImageButton
+                android:id="@+id/btnAddNote"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button_outline"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_add"
+                android:tint="@color/blueChip"/>
+
+            <!-- Panel PEMASUKAN -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_section_panel"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemasukan"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary"/>
+
+                <!-- item pemasukan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_pill_item"
+                    android:padding="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pemasukan"
+                            android:textStyle="bold"
+                            android:textColor="@color/textPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gaji Bulanan"
+                            android:textColor="@color/textSecondary"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+Rp 3.000.000"
+                        android:textStyle="bold"
+                        android:textColor="@color/greenIncome"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Panel PENGELUARAN -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_section_panel"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengeluaran"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary"/>
+
+                <!-- item 1 -->
+                <LinearLayout
+                    style="@style/NoteItemStyle">
+
+                    <LinearLayout
+                        style="@style/NoteItemLeft">
+                        <TextView style="@style/NoteItemTitle" android:text="Perawatan"/>
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli skincare"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/NoteItemAmount"
+                        android:text="-Rp 500.000"
+                        android:textColor="@color/redExpense"/>
+                </LinearLayout>
+
+                <!-- item 2 -->
+                <LinearLayout style="@style/NoteItemStyle">
+                    <LinearLayout style="@style/NoteItemLeft">
+                        <TextView style="@style/NoteItemTitle" android:text="Pakaian"/>
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli sepatu"/>
+                    </LinearLayout>
+                    <TextView style="@style/NoteItemAmount"
+                        android:text="- Rp 120.000"
+                        android:textColor="@color/redExpense"/>
+                </LinearLayout>
+
+                <!-- item 3 -->
+                <LinearLayout style="@style/NoteItemStyle">
+                    <LinearLayout style="@style/NoteItemLeft">
+                        <TextView style="@style/NoteItemTitle" android:text="Makanan dan Minuman"/>
+                        <TextView style="@style/NoteItemSubtitle" android:text="Beli geprek dan es nutrisari"/>
+                    </LinearLayout>
+                    <TextView style="@style/NoteItemAmount"
+                        android:text="- Rp 25.000"
+                        android:textColor="@color/redExpense"/>
+                </LinearLayout>
+
+                <!-- item 4 -->
+                <LinearLayout style="@style/NoteItemStyle">
+                    <LinearLayout style="@style/NoteItemLeft">
+                        <TextView style="@style/NoteItemTitle" android:text="Transportasi"/>
+                        <TextView style="@style/NoteItemSubtitle" android:text="Biaya tiket kereta api"/>
+                    </LinearLayout>
+                    <TextView style="@style/NoteItemAmount"
+                        android:text="- Rp 400.000"
+                        android:textColor="@color/redExpense"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav reuse yang lama -->
+    <include layout="@layout/part_bottom_nav"/>
+</LinearLayout>

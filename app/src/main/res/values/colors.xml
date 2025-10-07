@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#4A90E2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bluePrimary">#5EA2F2</color>
+    <color name="bluePrimaryDark">#3F85D8</color>
+    <color name="blueSoft">#E7F0FA</color>
+    <color name="blueChip">#4A90E2</color>
+    <color name="redChip">#E74C3C</color>
+    <color name="redChipDark">#D33928</color>
+    <color name="yellowSoft">#FFF6C7</color>
+    <color name="cardBg">#FFFFFF</color>
+    <color name="bottomBarBlue">#66B3FF</color>
+    <color name="textPrimary">#1C1C1C</color>
+    <color name="textSecondary">#6B6B6B</color>
+    <color name="stroke">#D9E4F3</color>
+</resources>
