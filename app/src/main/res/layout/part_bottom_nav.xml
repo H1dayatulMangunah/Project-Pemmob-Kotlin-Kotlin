@@ -7,66 +7,88 @@
     android:paddingHorizontal="24dp"
     android:gravity="center">
 
-        <LinearLayout
-            android:id="@+id/tabBook"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_book"
-                app:tint="@color/white"
-                android:contentDescription="@null"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Buku"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-        </LinearLayout>
+    <!-- Tab Buku -->
+    <LinearLayout
+        android:id="@+id/tabBook"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
 
-        <LinearLayout
-            android:id="@+id/tabWallet"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_wallet"
-                app:tint="@color/white"
-                android:contentDescription="@null"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dompet"
-                android:textColor="@color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/iconBook"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_book"
+            app:tint="@color/bottomNavInactive"
+            android:contentDescription="@null"/>
 
-        <LinearLayout
-            android:id="@+id/tabAnalysis"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_insight"
-                app:tint="@color/white"
-                android:contentDescription="@null"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Analisis"
-                android:textColor="@color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buku"
+            android:textSize="12sp"
+            android:textColor="@color/bottomNavInactive"/>
+    </LinearLayout>
+
+    <!-- Tab Dompet -->
+    <LinearLayout
+        android:id="@+id/tabWallet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iconWallet"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_wallet"
+            app:tint="@color/bottomNavInactive"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/textWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dompet"
+            android:textSize="12sp"
+            android:textColor="@color/bottomNavInactive"/>
+    </LinearLayout>
+
+    <!-- Tab Analisis -->
+    <LinearLayout
+        android:id="@+id/tabAnalysis"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iconAnalysis"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_insight"
+            app:tint="@color/bottomNavInactive"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/textAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analisis"
+            android:textSize="12sp"
+            android:textColor="@color/bottomNavInactive"/>
+    </LinearLayout>
+
 </LinearLayout>

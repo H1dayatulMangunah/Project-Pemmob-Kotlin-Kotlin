@@ -20,9 +20,11 @@
         </activity>
 
         <!-- Activity lain (tanpa intent-filter) → exported boleh false (disarankan) -->
-        <activity android:name=".PinVerifyActivity" android:exported="false" />
-        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".PinVerifyActivity" android:exported="true" />
+        <activity android:name=".HomeActivity" android:exported="true" />
         <activity android:name=".MainActivity" android:exported="false" />
-        <activity android:name=".NotesActivity" android:exported="false"/>
+        <activity android:name=".NotesActivity" android:exported="true"/>
+        <!-- <activity android:name=".AnalysisActivity"/> -->
+        <activity android:name=".ExpenseFormActivity" />
     </application>
 </manifest>

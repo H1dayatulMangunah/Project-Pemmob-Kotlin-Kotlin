@@ -9,10 +9,12 @@ class NotesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notes)
 
-        // tombol Tambah Catatan (opsional: buka form tambah baru)
+        // panggil di sini supaya bottom bar aktif
+        setupBottomNav(ActiveTab.BOOK)
+
+        // tombol tambah catatan (opsional)
         findViewById<ImageButton>(R.id.btnAddNote).setOnClickListener {
-            // TODO: buka form tambah (kalau dibutuhkan)
-            // startActivity(Intent(this, AddNoteActivity::class.java))
+            // TODO: buka form tambah
         }
     }
 }

@@ -16,4 +16,6 @@
     <color name="stroke">#D9E4F3</color>
     <color name="greenIncome">#2E7D32</color>
     <color name="redExpense">#D32F2F</color>
+    <color name="bottomNavActive">#FFFFFF</color>
+    <color name="bottomNavInactive">#B3FFFFFF</color>
 </resources>
